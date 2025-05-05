@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#sort {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#cars-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.car-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-info {
+    margin-bottom: 10px;
+}
+
+.car-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.collapsible-block {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.collapsible-header {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.collapsible-content {
+    padding: 10px;
+    display: none;
+}
+
+.collapsible-item {
+    display: block;
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.collapsible-item:hover {
+    background-color: #0056b3;
+}
