@@ -3,12 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Список машин</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Сортування авто</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Список машин</h1>
-  <div id="cars-list"></div>
-  <script src="script.js"></script>
+  <div id="site-navigation">
+    <a href="https://shod-jpg.github.io/-----/" target="_blank">Казино</a>
+    <a href="https://shod-jpg.github.io/market/" target="_blank">Маркет</a>
+  </div>
+  <div id="slot-left" class="slot-machine">
+    <div class="slot-row">
+      <div class="slot-container"></div>
+      <div class="slot-container"></div>
+      <div class="slot-container"></div>
+    </div>
+    <button class="slot-run" data-slot="slot-left">Run</button>
+  </div>
+  <div id="site-container">
+    <h1>Сортування авто</h1>
+    <div id="sorting-block">
+      <button id="sort-all">Сортувати всі авто</button>
+      <button id="select-car">Вибрати авто</button>
+      <div id="sort-options" class="hidden">
+        <button data-sort="alphabet">По алфавіту (Марка)</button>
+        <button data-sort="model">По моделі</button>
+        <button data-sort="date">По даті випуску</button>
+      </div>
+    </div>
+    <div id="selection-block" class="hidden">
+      <div id="brand-block"></div>
+      <div id="model-block"></div>
+      <div id="year-block"></div>
+    </div>
+    <div id="cars-list" class="hidden"></div>
+  </div>
+  <div id="slot-right" class="slot-machine">
+    <div class="slot-row">
+      <div class="slot-container"></div>
+      <div class="slot-container"></div>
+      <div class="slot-container"></div>
+    </div>
+    <button class="slot-run" data-slot="slot-right">Run</button>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
